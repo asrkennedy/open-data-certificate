@@ -160,7 +160,9 @@ questions:
       a.requirement "pilot_2"
     end
 
-
+    factory :answer_with_requirement_as_array do |a|
+      a.requirement "---\n- pilot_1\n- basic_1\n"
+    end
 
   end
 

@@ -16,10 +16,12 @@ class AnswerTest < ActiveSupport::TestCase
   end
 
   test "requirement_level should equal assigned value" do
-    answer = FactoryGirl.create :answer_with_requirement
+    answer = FactoryGirl.create :answer_with_requirement_as_array
+    # what should the array return as?
+    assert_equal answer.requirement_level, "pilot, basic"
+  end
 
-    assert_equal answer.requirement_level, "pilot"
-    end
+
 
 end
 
