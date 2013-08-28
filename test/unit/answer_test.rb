@@ -23,9 +23,3 @@ class AnswerTest < ActiveSupport::TestCase
 
 end
 
-
-
-
-  # test 'statement_text uses existing to_formatted_s' do
-  #   assert_equal 'yes, I do', @response1.statement_text
-  # end
