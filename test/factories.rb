@@ -117,7 +117,7 @@ questions:
       qc.display_on_certificate true
     end
 
-    factory :required_question do
+    factory :requirement do
       requirement 'level_1'
       display_type 'label'
     end

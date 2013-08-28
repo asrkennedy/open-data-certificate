@@ -3,7 +3,7 @@ require 'test_helper'
 class AnswerTest < ActiveSupport::TestCase
 
   test "requirement should equal its question's requirement if it doesn't have its own" do
-    question = FactoryGirl.create :required_question
+    question = FactoryGirl.create :requirement
     answer = FactoryGirl.create :answer, question: question
 
     assert_equal answer.requirement, question.requirement
